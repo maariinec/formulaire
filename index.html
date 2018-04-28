@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="main">
+      <fieldset>
+         <form id="formPerso">
+           <fieldset>
+              <legend>Informations personnelles</legend>
+              <label for="formPerso__prenom">Prénom* </label>
+              <input id="formPerso__prenom" type="text" name="text" placeholder="Inserer votre prénom ici" size="35" <input type="text" name="prenom" id="prenom" required>
+
+              <label for="formPerso__nom">nom* </label>
+              <input id="formPerso__nom" type="text" name="text" placeholder="Inserer votre nom ici" size="35" required><br>
+
+              <label for="formPerso__date">Date de naissance* </label>
+              <input id="formPerso__date" type="date">
+            </fieldset>
+          </form>
+
+          <form id="formNumber">
+            <label for="formNumber__joueur">Numéro du joueur (compris entre 9 et 99)</legend>
+            <input id="formNumber__joueur" type="number" max="99" min="9">
+          </form>
+
+          <form id="formInfo">
+            <fieldset>
+              <legend> Listes des postes auxquels je peux évoluer </legend>
+              <input type="radio" name="Nom du poste" value="valeur du bouton">
+              <label for="formRadio"> Défenseur </label> <br>
+              <input type="radio" name="Nom du poste" value="valeur du bouton">
+              <label for="formRadio"> Milieu </label> <br>
+              <input type="radio" name="Nom du poste" value="valeur du bouton">
+              <label for="formRadio"> attaquant </label><br>
+              <input type="button" value="Obtenir des informations supplémentaires sur les postes">
+            </fieldset>
+            <input type="submit" value="Envoyer">
+            * = Champs obligatoires
+          </form>
+        </fieldset>
+    </section>
+  </body>
+</html>
